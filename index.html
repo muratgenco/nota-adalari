@@ -30,6 +30,8 @@
   color-scheme:light;
 }
 html,body{height:100%}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+[hidden]{display:none!important}
 *{box-sizing:border-box}
 body{
   margin:0;background:var(--sky);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.45;
@@ -267,6 +269,8 @@ p{margin:0}
   .answers{gap:5px}
   .nb{min-height:58px;border-radius:12px}
   .daily{flex-wrap:wrap}
+  .gtop{flex-wrap:wrap}
+  .dots{order:3;flex-basis:100%;max-width:none;justify-content:center}
 }
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
